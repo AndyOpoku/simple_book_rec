@@ -187,7 +187,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Streamlit run instructions
-# 1. Install required libraries: streamlit, pandas, numpy
-# 2. Load your data and cosine similarity matrix
-# 3. Run with: streamlit run your_app.py

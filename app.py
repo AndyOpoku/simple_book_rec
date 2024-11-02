@@ -5,7 +5,9 @@ import pickle
 import random
 
 data = pickle.load(open("book_data.pkl", 'rb'))
-cosine_sim= pickle.load(open("cosine_sim.pkl", 'rb'))
+with open('cosine_sim.pkl', 'rb') as file:
+    cosine_sim = pickle.load(file)
+#cosine_sim= pickle.load(open("cosine_sim.pkl", 'rb'))
 #movies_list = movies['title'].values
 
 # Note: You'll need to import your existing data and cosine_sim

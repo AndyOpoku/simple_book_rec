@@ -8,11 +8,6 @@ data = pickle.load(open("book_data.pkl", 'rb'))
 cosine_sim= pickle.load(open("cosine_sim.pkl", 'rb'))
 #movies_list = movies['title'].values
 
-# Note: You'll need to import your existing data and cosine_sim
-# Make sure to load these before running the Streamlit app
-# data = pd.read_csv('your_data.csv')
-# cosine_sim = np.load('cosine_sim_matrix.npy')
-
 def recommend_books(book_title, cosine_sim=cosine_sim):
     # Clean the book title (strip white spaces and convert to lowercase)
     book_title = book_title.strip().lower()
